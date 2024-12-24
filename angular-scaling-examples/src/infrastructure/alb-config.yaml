@@ -1,0 +1,6 @@
+ALBConfig:
+  Algorithm: least_outstanding_requests
+  Stickiness: true
+  HealthCheck:
+    Path: /health
+    Interval: 30

@@ -1,0 +1,6 @@
+AutoScalingGroup:
+  MinSize: 2
+  MaxSize: 10
+  DesiredCapacity: 4
+  HealthCheckType: ELB
+  HealthCheckGracePeriod: 300
