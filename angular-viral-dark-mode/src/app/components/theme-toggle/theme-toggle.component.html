@@ -1,0 +1,11 @@
+<button 
+  class="theme-toggle" 
+  (click)="toggleTheme()" 
+  [attr.aria-label]="(isDarkMode$ | async) ? 'Switch to light mode' : 'Switch to dark mode'"
+>
+  <img 
+    [src]="(isDarkMode$ | async) ? 'assets/icons/sun.svg' : 'assets/icons/moon.svg'"
+    [alt]="(isDarkMode$ | async) ? 'Sun icon' : 'Moon icon'"
+    class="theme-icon"
+  >
+</button>
